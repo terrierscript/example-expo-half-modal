@@ -18,12 +18,14 @@ const Base = () => {
 }
 
 const Navi = () => {
-  const a: string = "10"
   return (
     <Stack.Navigator
       mode={"modal"}
       screenOptions={{
-        cardStyle: { backgroundColor: "transparent" },
+        cardStyle: {
+          backgroundColor: "transparent"
+        },
+        gestureEnabled: true,
         cardOverlayEnabled: true
       }}
       headerMode="none"
